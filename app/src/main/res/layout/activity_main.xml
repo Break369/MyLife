@@ -16,30 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-        <FrameLayout
-            android:layout_marginTop="58dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <android.support.v4.widget.SwipeRefreshLayout
-                android:id="@+id/refreshLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rvFeed"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbars="none"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-            </android.support.v4.widget.SwipeRefreshLayout>
-            <ImageView
-                android:id="@+id/imgAdd"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_gravity="bottom|right"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/imgadd"/>
-        </FrameLayout>
+        <include layout="@layout/content_main"/>
         <android.support.design.widget.AppBarLayout
                 android:id="@+id/appBarLayout"
                 android:layout_width="match_parent"
